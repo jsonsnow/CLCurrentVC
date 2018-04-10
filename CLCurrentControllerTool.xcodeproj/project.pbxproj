@@ -15,6 +15,8 @@
 		BA1F15EF207D1618006A8C60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1F15EE207D1618006A8C60 /* main.m */; };
 		BA1F15F9207D1618006A8C60 /* CLCurrentControllerToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1F15F8207D1618006A8C60 /* CLCurrentControllerToolTests.m */; };
 		BA1F1604207D1618006A8C60 /* CLCurrentControllerToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1F1603207D1618006A8C60 /* CLCurrentControllerToolUITests.m */; };
+		BA1F1613207D16E2006A8C60 /* UIViewController+VCCurrentVCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1F1612207D16E2006A8C60 /* UIViewController+VCCurrentVCCategory.m */; };
+		BA1F1619207D17B3006A8C60 /* UIApplication+CLCurrentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1F1618207D17B3006A8C60 /* UIApplication+CLCurrentVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		BA1F15FF207D1618006A8C60 /* CLCurrentControllerToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLCurrentControllerToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1F1603207D1618006A8C60 /* CLCurrentControllerToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCurrentControllerToolUITests.m; sourceTree = "<group>"; };
 		BA1F1605207D1618006A8C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1F1611207D16E2006A8C60 /* UIViewController+VCCurrentVCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VCCurrentVCCategory.h"; sourceTree = "<group>"; };
+		BA1F1612207D16E2006A8C60 /* UIViewController+VCCurrentVCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VCCurrentVCCategory.m"; sourceTree = "<group>"; };
+		BA1F1617207D17B3006A8C60 /* UIApplication+CLCurrentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CLCurrentVC.h"; sourceTree = "<group>"; };
+		BA1F1618207D17B3006A8C60 /* UIApplication+CLCurrentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CLCurrentVC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 		BA1F15DE207D1618006A8C60 /* CLCurrentControllerTool */ = {
 			isa = PBXGroup;
 			children = (
+				BA1F1611207D16E2006A8C60 /* UIViewController+VCCurrentVCCategory.h */,
+				BA1F1612207D16E2006A8C60 /* UIViewController+VCCurrentVCCategory.m */,
+				BA1F1617207D17B3006A8C60 /* UIApplication+CLCurrentVC.h */,
+				BA1F1618207D17B3006A8C60 /* UIApplication+CLCurrentVC.m */,
 				BA1F15DF207D1618006A8C60 /* AppDelegate.h */,
 				BA1F15E0207D1618006A8C60 /* AppDelegate.m */,
 				BA1F15E2207D1618006A8C60 /* ViewController.h */,
@@ -265,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1F1619207D17B3006A8C60 /* UIApplication+CLCurrentVC.m in Sources */,
+				BA1F1613207D16E2006A8C60 /* UIViewController+VCCurrentVCCategory.m in Sources */,
 				BA1F15E4207D1618006A8C60 /* ViewController.m in Sources */,
 				BA1F15EF207D1618006A8C60 /* main.m in Sources */,
 				BA1F15E1207D1618006A8C60 /* AppDelegate.m in Sources */,
