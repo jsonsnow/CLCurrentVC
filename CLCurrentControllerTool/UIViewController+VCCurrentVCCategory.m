@@ -31,6 +31,9 @@
 
 - (void)vc_setSelectedViewController:(__kindof UIViewController *)selectedViewController {
     [UIApplication sharedApplication].currentVC = selectedViewController;
+    if ([selectedViewController isKindOfClass:NSClassFromString(@"UINavigationController")]) {
+        [UIApplication sharedApplication].currentVC = ((UINavigationController *)selectedViewController).topViewController;
+    }
     [self vc_setSelectedViewController:selectedViewController];
 }
 @end
@@ -44,6 +47,9 @@
 
 - (void)vc_presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
     [UIApplication sharedApplication].currentVC = viewControllerToPresent;
+    if ([viewControllerToPresent isKindOfClass:NSClassFromString(@"UINavigationController")]) {
+        [UIApplication sharedApplication].currentVC = ((UINavigationController *)viewControllerToPresent).topViewController;
+    }
     [self vc_presentViewController:viewControllerToPresent animated:flag completion:completion];
 }
 
@@ -64,6 +70,10 @@
 }
 
 - (void)vc_pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    //改情况为创建navc初始rootCtr的时候
+    if (self.viewIfLoaded) {
+        return;
+    }
     [UIApplication sharedApplication].currentVC = viewController;
     [self vc_pushViewController:viewController animated:animated];
 }
