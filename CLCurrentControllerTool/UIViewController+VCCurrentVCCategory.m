@@ -71,9 +71,6 @@
 
 - (void)vc_pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     //改情况为创建navc初始rootCtr的时候
-    if (self.viewIfLoaded) {
-        return;
-    }
     [UIApplication sharedApplication].currentVC = viewController;
     [self vc_pushViewController:viewController animated:animated];
 }
