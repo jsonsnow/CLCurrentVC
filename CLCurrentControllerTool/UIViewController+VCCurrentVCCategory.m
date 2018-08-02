@@ -54,7 +54,9 @@
 }
 
 - (void)vc_dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
-    [UIApplication sharedApplication].currentVC = self.presentingViewController;
+    if (self.presentationController) {
+        [UIApplication sharedApplication].currentVC = self.presentingViewController;
+    }
     [self vc_dismissViewControllerAnimated:flag completion:completion];
 }
 
